@@ -6,3 +6,4 @@ To make this work you need to ...
 * install sbt with `brew install sbt`
 * clone the repo with `git clone https://github.com/rolandtritsch/scala-fib-bench.git`
 * build and run the tests with `sbt test`
+* look at the results by opening `target/benchmark/results/index.html` in the browser of your choice

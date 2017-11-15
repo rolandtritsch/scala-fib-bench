@@ -4,10 +4,18 @@ lazy val root = (project in file(".")).
   settings(
     inThisBuild(List(
       organization := "org.tritsch",
-      scalaVersion := "2.12.4",
-      version      := "0.1.0-SNAPSHOT"
+      scalaVersion := "2.12.4"
     )),
     name := "Fib-Bench",
+
+    libraryDependencies += scalactic,
     libraryDependencies += scalatest % Test,
-    libraryDependencies += scalactic
+    libraryDependencies += scalacheck % Test,
+    libraryDependencies += scalameter % Test,
+
+    testFrameworks += new TestFramework(
+      "org.scalameter.ScalaMeterFramework"
+    ),
+    parallelExecution in Test := false,
+    logBuffered := false
   )
