@@ -6,8 +6,8 @@ object FibonacciBench extends Bench.OfflineReport {
   import Fibonacci._
 
   // generators
-  val ns = Gen.range("n")(0, 19, 1)
-  val nns = Gen.range("n")(0, 99, 5)
+  val ns = Gen.range("n")(0, 30, 3)
+  val nns = Gen.range("n")(0, 30000, 3000)
 
   // tests
   performance of "Fibonacci" in {
