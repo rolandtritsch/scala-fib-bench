@@ -10,7 +10,7 @@ To make the jvm version work ...
 
 * you need to cd into `jvm`
 * build and run the tests with `sbt test`
-* look at the results by opening `target/benchmark/results/index.html` in the browser of your choice
+* look at the results by opening `target/benchmark/report/index.html` in the browser of your choice
 
 To make the llvm version work ...
 
